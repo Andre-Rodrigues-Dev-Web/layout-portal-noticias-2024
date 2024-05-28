@@ -41,13 +41,13 @@
 /* Header */
 header {
   background-color: #fff;
+  box-shadow: var(--box-shadow);
   color: #333;
   padding: 1.5em 0;
-  text-align: center;
   position: sticky;
+  text-align: center;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--box-shadow);
   .logo {
     h1 {
       margin: 0;
@@ -55,7 +55,7 @@ header {
       font-weight: bold;
     }
   }
-  nav {
+  .links-categorys{
     ul {
       list-style-type: none;
       padding: 0;
