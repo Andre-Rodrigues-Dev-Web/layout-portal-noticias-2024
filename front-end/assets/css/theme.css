@@ -28,6 +28,9 @@
     color: var(--text-color);
     line-height: 1.6;
   }
+  li{
+    list-style-type: none;
+  }
   audio,
   img,
   iframe,
@@ -43,12 +46,47 @@ header {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   color: #333;
-  padding: 1.5em 0;
   position: sticky;
   text-align: center;
   top: 0;
   z-index: 1000;
+  .top-links{
+    background-color: #202E40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    .about, .social-links{
+      display: flex;
+      li{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        a{
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+    .social-links{
+      gap: 20px;
+      li{
+        a{
+          font-size: 25px;
+        }
+      }
+    }
+    .about{
+      gap: 30px;
+      li{
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .logo {
+    padding: 1.5em 0;
     h1 {
       margin: 0;
       font-size: 2em;
